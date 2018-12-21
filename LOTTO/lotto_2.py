@@ -1,0 +1,113 @@
+import random
+import requests
+import json
+from pprint import pprint
+
+
+"""
+0. random으로 로또번호를 생성합니다.
+1. api를 통해 우승번호를 가져옵니다.
+2. 0번과 1번을 비교하여 나의 등수를 알려줍니다.
+----------
+1. url 요청 보내서 정보를 가져옵니다.
+    - json으로 받는다. (딕셔너리로 접근 가능)
+2. api의 당첨번호와 보너스 번호를 저장하고,
+3. 뽑은게 몇 등인지 하는거 뽑으세요. 끝.
+"""
+url = "https://dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=837"
+res = requests.get(url)
+lotto = res.json()
+
+winner = []
+for i in range(1,7):
+    winner.append(lotto[f"drwtNo{i}"])
+
+bonus = lotto["bnusNo"]
+print("이번 주 당첨번호: " + str(winner))
+print("보너스 번호: " + str(bonus))
+
+count = 0
+while True:
+    count += 1    
+    my_numbers = sorted(random.sample(range(1,46), 6))
+    matched = len(set(winner) & set(my_numbers))
+
+    if matched == 6:
+        print("1등")
+    elif matched == 5:
+        if bonus in my_numbers:
+            print("2등")
+        else:
+            print("3등")
+    elif matched == 4:
+        print("4등")
+    elif matched == 3:
+        print("5등")
+        print(count,"번만에 당첨되셨습니다.")
+        money = format(count*1000, ',')
+        print("쓴 돈은", money)
+        break
+    else:
+        print("응 안돼")
+
+
+# # pprint(lotto)
+# lucky = []
+# bonus = []
+# # number = list(range(1,46))
+# # mylotto = random.sample(number, 7)
+# # mylotto = [2, 25, 28, 30, 33, 43, 6]
+# # print(mylotto)
+
+# for i in range(1,7):
+#     # print(lotto.get(f'drwtNo{i}'))
+#     lucky.append(lotto.get(f'drwtNo{i}'))
+# bonus.append(lotto.get('bnusNo'))
+
+#     # bonus.append()
+# print(lucky)
+# print(bonus)
+# # print(mylotto)
+
+# set_lucky = set(lucky)
+# set_bonus = set(bonus)
+
+# # print(set_lucky)
+
+# count = 0
+# while True:
+#     number = list(range(1,46))
+#     mylotto = random.sample(number, 7)
+#     set_mylotto = set(mylotto)
+
+#     count += 1
+#     if len(set_lucky & set_mylotto) == 6:
+#         print("1등입니다.")
+#         print(f'{count}번만에 당첨!')
+#         # break
+#     # elif len((set_lucky | set_bonus) & set_mylotto) == 6:
+#     elif len(set_lucky & set_mylotto) == 5 and len(set_bonus & set_mylotto) == 1:
+#         print("2등입니다.")
+#         print(f'{count}번만에 당첨!')
+#         break
+#     elif len(set_lucky & set_mylotto) == 5:
+#         print("3등입니다.")
+#         print(f'{count}번만에 당첨!')
+#         # break
+#     elif len(set_lucky & set_mylotto) == 4:
+#         print("4등입니다.")
+#         print(f'{count}번만에 당첨!')
+#         # break
+#     elif len(set_lucky & set_mylotto) == 3:
+#         print("5등입니다.")
+#         print(f'{count}번만에 당첨!')
+#         # break
+#     else:
+#         # print("다음 기회에")
+#         print(f'{count}번만에 당첨!')
+
+
+# # print(lotto.values())
+
+
+# # print(lotto.get('drwtNo1'))
