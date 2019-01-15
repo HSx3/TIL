@@ -1,0 +1,16 @@
+import sys
+sys.stdin = open("card_input.txt")
+T = int(input())
+for test_case in range(1, T + 1):
+    N = int(input())
+    data = list(map(int, input()))
+    count_num = []
+    max_idx = 0
+    for i in range(0, 10):
+        data.count(i)
+        count = data.count(i)
+        count_num.append(count)
+        for idx, number in enumerate(count_num):
+            if number == max(count_num):
+                max_idx = idx
+    print("#{} {} {}".format(test_case, max_idx, max(count_num)))
