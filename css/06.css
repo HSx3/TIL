@@ -1,0 +1,63 @@
+.square {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+}
+
+.relative-box {
+    /* 자신의 위치를 기준으로 움직임 */
+    position: relative;
+    background-color: navy;
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-box {
+    /* 부모의 위치를 기준으로 움직임 */
+    position: absolute;
+    background-color: chocolate;
+    top: 30px;
+    left: 30px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: coral;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+}
+
+/* z-index의 번호로 순서 지정 & 부모의 z-index 따라감*/
+.z-index-1 {
+    background-color: brown;
+    top: 300px;
+    left: 300px;
+    z-index: 1;
+    
+}
+
+.z-index-2 {
+    background-color: darkgreen;
+    top: 350px;
+    left: 350px;
+    z-index: 2;
+
+}
+
+.z-index-3 {
+    background-color: slateblue;
+    top: 400px;
+    left: 400px;
+    z-index: 3;
+
+}
+
+/* 
+static : 기본값
+relative : 현재 위치에서 상하좌우 상대적으로 움직일 수 있게 된다.
+position 적용 전(static일때) 기준으로 움직임. 움직인 후 원래 있던 공간이 유지됨.
+absolute : 기본 레이어 관계에서 벗어난다. (집니간 자식, 붕뜬다.) 즉, 다른 도형들도 새로운 자리로 움직이게 된다. 움직인 후 원래 있었던 공간이 사라진다. 부모 영역을 벗어나 자유롭게 어디든 위치할 수 있다. 부모의 static 이외에 position 프로퍼티가 지정되어 있을 경우에만 부모를 기준으로 위치하게 된다. 만약, 부모, 조상이 모두 static이면 document body를 기준으로 위치하게 된다.
+fixed : absolute와 동일하게 움직이지만 스크롤이 생길 때 움직이지 않고 고정되어있다. tip : 부모에게 position: relative를 줘서 자식이 absolute를 받을 때 기준점을 부모로 인식하도록 하는 것이 편하다.
+*/

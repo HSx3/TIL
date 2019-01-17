@@ -1,0 +1,8 @@
+.none {
+    /* 차지하던 공간도 같이 사라짐 */
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}

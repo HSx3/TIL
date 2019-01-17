@@ -1,0 +1,58 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+}
+
+.padding-10 {
+    padding: 10px
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.margin-50 {
+    margin: 50px;
+    /* 4개 : top, right, bottom, left */
+    /* margin: 50px 50px 50px 50px; */
+    /* 3개 : top, right-left, bottom */
+    /* margin: 25px 50px 25px; */
+    /* 2개 : top-bottom, right-left */
+    /* margin: 25px 25px */
+    /* margin-left: auto; 왼쪽에 남은 너비를 붙인다. (오른쪽 정렬)
+    margin: auto; 오른쪽 왼쪽 반반 나눠준다. */
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+}
+
+.margin-3 {
+    margin: 10px 20px 30px
+}
+
+.border {
+    /* 순서 상관없음 */
+    /* border: 1px black dashed; */
+    border-style: dashed;
+    border-bottom-style: double;
+    border-top-style: solid;
+    border-left-style: inset;
+    border-bottom-color: aqua;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.football {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 10% 75%;
+    opacity: 0.5;
+}
