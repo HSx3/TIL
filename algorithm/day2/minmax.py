@@ -12,6 +12,25 @@ for test_case in range(1, T + 1):
                 minmax = data[-1] - data[0]
     print("#{} {}".format(test_case, minmax))
 
+
+# import sys
+# sys.stdin = open("minmax_input.txt")
+# T = int(input())
+# for test_case in range(1, T + 1):
+#     N = int(input())
+#     data = list(map(int, input().split()))
+#     min = 987654321       # min = data[0]
+#     max = -987654321      # max = data[0]
+#     for i in range(N):
+#         if min > data[i]:
+#             min = data[i]
+#         if max < data[i]:
+#             max = data[i]
+#
+#     ans = max - min
+#     print("#{0} {1}".format(test_case, ans))
+
+
 # 기본 제공코드는 임의 수정해도 관계 없습니다. 단, 입출력 포맷 주의
 # 아래 표준 입출력 예제 필요시 참고하세요.
 
