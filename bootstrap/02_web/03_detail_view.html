@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>영화추천사이트</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="03_detail_view.css">
+    <style>
+        .section {
+            height: 350px;
+            background-image: url(popcorn.jpg);
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+            background-position: center;
+        }
+        
+        h2 {
+            line-height: 350px;
+            color: white;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Pen+Script&subset=korean');
+
+        body {
+            height: 10000px;
+            font-family: 'Nanum Pen Script', cursive;
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="font-family: Nanum Pen Script">
+        <a class="navbar-brand" href="#">영화추천시스템</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">친구 평점 보러가기</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="subtitle d-flex flex-column justify-content-center text-center">
+            <h3>영화 목록</h3>
+            <hr width=70px color=darkorange>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="card col col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img data-target="#movie-1-modal" data-toggle="modal" src="assets/20184105.jpg" class="card-img-top"
+                    alt="말모이">
+                <div class="card-body">
+                    <h4 class="card-title">말모이<span class="badge badge-info">9.04</h4>
+                    <hr>
+                    <p class="card-text">드라마</p>
+                    <p class="card-text">개봉일 : 2019.01.09.</p>
+                    <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=167699" target="_blank" class="btn btn-success">영화정보
+                        보러가기</a>
+                </div>
+            </div>
+
+            <div class="card col col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img src="./assets/20176251.jpg" class="card-img-top" alt="내안의 그놈" data-target="#movie-2-modal"
+                    data-toggle="modal">
+                <div class="card-body">
+                    <h4 class="card-title">내안의 그놈<span class="badge badge-dark">8.69</h4>
+                    <hr>
+                    <p class="card-text">판타지</p>
+                    <p class="card-text">개봉일 : 2019.01.09.</p>
+                    <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=164172" target="_blank" class="btn btn-success">영화정보
+                        보러가기</a>
+                </div>
+            </div>
+            <div class="card col col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img src="assets/20182544.jpg" class="card-img-top" alt="글래스" data-target="#movie-3-modal" data-toggle="modal">
+                <div class="card-body">
+                    <h4 class="card-title">글래스<span class="badge badge-dark">7.69</h4>
+                    <hr>
+                    <p class="card-text">드라마</p>
+                    <p class="card-text">개봉일 : 2019.01.17.</p>
+                    <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=163826" target="_blank" class="btn btn-success">영화정보
+                        보러가기</a>
+                </div>
+            </div>
+            <div class="card col col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img src="assets/20189463.jpg" class="card-img-top" alt="주먹왕 랄프" data-target="#movie-4-modal"
+                    data-toggle="modal">
+                <div class="card-body">
+                    <h4 class="card-title">주먹왕 랄프<span class="badge badge-dark">8.76</h4>
+                    <hr>
+                    <p class="card-text">애니메이션</p>
+                    <p class="card-text">개봉일 : 2019.01.03.</p>
+                    <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=152632" target="_blank" class="btn btn-success">영화정보
+                        보러가기</a>
+                </div>
+            </div>
+            <div class="card col col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img src="assets/20186324.jpg" class="card-img-top" alt="언더독" data-target="#movie-5-modal" data-toggle="modal">
+                <div class="card-body">
+                    <h4 class="card-title">언더독<span class="badge badge-info">9.50</h4>
+                    <hr>
+                    <p class="card-text">애니메이션</p>
+                    <p class="card-text">개봉일 : 2019.01.16.</p>
+                    <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144318" target="_blank" class="btn btn-success">영화정보
+                        보러가기</a>
+                </div>
+            </div>
+            <div class="card col col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img src="assets/20180290.jpg" class="card-img-top" alt="아쿠아맨" data-target="#movie-6-modal" data-toggle="modal">
+                <div class="card-body">
+                    <h4 class="card-title">아쿠아맨<span class="badge badge-dark">8.78</h4>
+                    <hr>
+                    <p class="card-text">액션</p>
+                    <p class="card-text">개봉일 : 2018.12.19.</p>
+                    <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=151153" target="_blank" class="btn btn-success">영화정보
+                        보러가기</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="modal fade" id="movie-1-modal" tabindex="-1" role="dialog" aria-labelledby="#movie-1-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="movie" id="movie">말모이, MAL·MO·E: The Secret Missione</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <img src="assets/20184105-1.jpg" alt="말모이">
+                <div class="modal-body">
+                    <p>12세이상관람가</p>
+                    <p>누적 관객수 : 2,224,910</p>
+                    <hr>
+                    까막눈 판수, 우리말에 눈뜨다! vs 조선어학회 대표 정환, ‘우리’의 소중함에 눈뜨다!
+                    <br>
+                    <br>
+                    1940년대 우리말이 점점 사라져가고 있는 경성.
+                    극장에서 해고된 후 아들 학비 때문에 가방을 훔치다 실패한 판수.
+                    하필 면접 보러 간 조선어학회 대표가 가방 주인 정환이다.
+                    사전 만드는데 전과자에다 까막눈이라니!
+                    그러나 판수를 반기는 회원들에 밀려 정환은 읽고 쓰기를 떼는 조건으로 그를 받아들인다.
+                    돈도 아닌 말을 대체 왜 모으나 싶었던 판수는 난생처음 글을 읽으며 우리말의 소중함에 눈뜨고,
+                    정환 또한 전국의 말을 모으는 ‘말모이’에 힘을 보태는 판수를 통해 ‘우리’의 소중함에 눈뜬다.
+                    얼마 남지 않은 시간, 바짝 조여오는 일제의 감시를 피해 ‘말모이’를 끝내야 하는데…
+
+                    우리말이 금지된 시대, 말과 마음이 모여 사전이 되다
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 내안의 그놈 -->
+    <div class="modal fade" id="movie-2-modal" tabindex="-1" role="dialog" aria-labelledby="#movie-2-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="movie" id="movie">내안의 그놈, Inside me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <img src="assets/20176251-1.jpg" alt="내안의 그놈">
+                <div class="modal-body">
+                    <p>15세이상관람가</p>
+                    <p>누적 관객수 : 1.783.813</p>
+                    <hr>
+                    나 너니? 너 나니??
+                    <br>
+                    제대로 바뀐 아재와 고딩, 웃음 대환장 파티!
+                    <br>
+                    엘리트 아재 판수(박성웅)를 우연히 옥상에서 떨어진 고등학생 동현(진영)이 덮치면서 제대로 바뀐다.
+                    게다가 판수는 동현의 몸으로 첫사랑 미선(라미란)과 존재도 몰랐던 딸 현정(이수민)을 만나게 되는데…
+                    대유잼의 향연, 넌 이미 웃고 있다!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="movie-3-modal" tabindex="-1" role="dialog" aria-labelledby="#movie-3-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="movie" id="movie">글래스, </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <img src="assets/20182544-1.jpg" alt="글래스">
+                <div class="modal-body">
+                    <p>15세이상관람가</p>
+                    <p>누적 관객수 : 1.783.813</p>
+                    <hr>
+                    나 너니? 너 나니??
+                    <br>
+                    제대로 바뀐 아재와 고딩, 웃음 대환장 파티!
+                    <br>
+                    엘리트 아재 판수(박성웅)를 우연히 옥상에서 떨어진 고등학생 동현(진영)이 덮치면서 제대로 바뀐다.
+                    게다가 판수는 동현의 몸으로 첫사랑 미선(라미란)과 존재도 몰랐던 딸 현정(이수민)을 만나게 되는데…
+                    대유잼의 향연, 넌 이미 웃고 있다!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="movie-4-modal" tabindex="-1" role="dialog" aria-labelledby="#movie-4-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="movie" id="movie">주먹왕 랄프, </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <img src="assets/20189463-1.jpg" alt="주먹왕 랄프">
+                <div class="modal-body">
+                    <p>15세이상관람가</p>
+                    <p>누적 관객수 : 1.783.813</p>
+                    <hr>
+                    나 너니? 너 나니??
+                    <br>
+                    제대로 바뀐 아재와 고딩, 웃음 대환장 파티!
+                    <br>
+                    엘리트 아재 판수(박성웅)를 우연히 옥상에서 떨어진 고등학생 동현(진영)이 덮치면서 제대로 바뀐다.
+                    게다가 판수는 동현의 몸으로 첫사랑 미선(라미란)과 존재도 몰랐던 딸 현정(이수민)을 만나게 되는데…
+                    대유잼의 향연, 넌 이미 웃고 있다!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="movie-5-modal" tabindex="-1" role="dialog" aria-labelledby="#movie-5-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="movie" id="movie">언더독, </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <img src="assets/20186324-1.jpg" alt="언더독">
+                <div class="modal-body">
+                    <p>15세이상관람가</p>
+                    <p>누적 관객수 : 1.783.813</p>
+                    <hr>
+                    나 너니? 너 나니??
+                    <br>
+                    제대로 바뀐 아재와 고딩, 웃음 대환장 파티!
+                    <br>
+                    엘리트 아재 판수(박성웅)를 우연히 옥상에서 떨어진 고등학생 동현(진영)이 덮치면서 제대로 바뀐다.
+                    게다가 판수는 동현의 몸으로 첫사랑 미선(라미란)과 존재도 몰랐던 딸 현정(이수민)을 만나게 되는데…
+                    대유잼의 향연, 넌 이미 웃고 있다!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="movie-6-modal" tabindex="-1" role="dialog" aria-labelledby="#movie-6-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="movie" id="movie">아쿠아맨, </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <img src="assets/20180290-1.jpg" alt="아쿠아맨">
+                <div class="modal-body">
+                    <p>15세이상관람가</p>
+                    <p>누적 관객수 : 1.783.813</p>
+                    <hr>
+                    나 너니? 너 나니??
+                    <br>
+                    제대로 바뀐 아재와 고딩, 웃음 대환장 파티!
+                    <br>
+                    엘리트 아재 판수(박성웅)를 우연히 옥상에서 떨어진 고등학생 동현(진영)이 덮치면서 제대로 바뀐다.
+                    게다가 판수는 동현의 몸으로 첫사랑 미선(라미란)과 존재도 몰랐던 딸 현정(이수민)을 만나게 되는데…
+                    대유잼의 향연, 넌 이미 웃고 있다!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
