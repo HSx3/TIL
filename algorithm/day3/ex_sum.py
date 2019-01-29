@@ -38,6 +38,6 @@ for test_case in range(1, T+1):
         sum += arr[i][len(arr)-i-1]
     if sum_max < sum:
         sum_max = sum
-        
+
     print(f'#{test_case} {sum_max}')
     sum_max = -987654321
