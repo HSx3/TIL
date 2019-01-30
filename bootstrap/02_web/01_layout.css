@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Pen+Script&subset=korean');
+
+h2 {
+    font-family: 'Nanum Pen Script', cursive;
+}
+
 .card-footer {
     /* position: fixed; */
     /* padding: 0 3rem 0 3rem */
@@ -6,4 +12,5 @@
     height: 50px;
     width: 100%;
     background: #999;
+    font-family: 'Do Hyeon', sans-serif;
  }

@@ -1,10 +1,27 @@
-.subtitle {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+.d-block {
+    height: 300px;
 }
 
-.card {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 0;
+.card-img-top {
+    cursor: pointer;
 }
+
+.section:hover {
+    background-image: url('popcorn.jpg');
+    background-color: rgba(255, 255, 255, 0.376);
+    background-blend-mode: lighten;
+}
+
+.card-title {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* .card {
+    min-height: 335px;
+} */
+
+/* .card {
+    height: 508.8px;
+    width: 210px;
+} */

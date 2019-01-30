@@ -8,3 +8,11 @@
     margin-bottom: 1rem;
     padding: 0;
 }
+
+.card-img-top {
+    height: 335px;
+}
+
+.btn {
+    margin-top: 1rem;
+}
