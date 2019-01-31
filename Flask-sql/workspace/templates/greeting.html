@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--안녕, {{ html_name }}!-->
+    <!--내이름이 들어오면 누구누구 왔니?-->
+    <!--다른이름이 들어오면 너 누구야?-->
+    {% if html_name == '바보' %}
+        안녕, {{ html_name }} 왔니?
+        <!--{{ html_name }} 왔니?-->
+    {% else %}
+        {{ html_name }} 너 누구야!
+    {% endif %}
+</body>
+</html>

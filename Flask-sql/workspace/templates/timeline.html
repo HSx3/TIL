@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action='/timeline/create' target="_blank">
+        <input type='text' name='username'><br>
+        <input type='text' name='message'>
+        <input type='submit' value='send'>
+    </form>
+    
+    <!-- flask에서 받은 객체(딕셔너리 형태)를 받아서 반복문으로 출력 -->
+    <ul>
+        {% for timeline in timelines %}
+        <li>{{ timeline.username }} : {{ timeline.message }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
