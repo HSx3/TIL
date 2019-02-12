@@ -1,11 +1,11 @@
-def dfs(v):
-    global G, visited, n
-    visited[v] = 1
-    print(v, end=" ")
-
-    for w in range(n):
-        if G[v][w] == 1 and visited[w] == 0:
-            dfs(w)
+# def dfs(v):
+#     global G, visited, n
+#     visited[v] = 1
+#     print(v, end=" ")
+#
+#     for w in range(n):
+#         if G[v][w] == 1 and visited[w] == 0:
+#             dfs(w)
 
 import sys
 sys.stdin = open("연습3_input.txt")
