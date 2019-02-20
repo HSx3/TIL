@@ -1,0 +1,12 @@
+{% extends 'boards/base.html' %}
+{% block body %}
+    <h1>Board</h1>
+    <a href="/boards/new/">글 작성하기</a>
+    <hr>
+    {% for board in boards %}
+        <p>{{ board.id }}</p>
+        <p>{{ board.title }}</p>
+        {{ board.created_at|timesince }} 전
+        <hr>
+    {% endfor %}
+{% endblock %}
