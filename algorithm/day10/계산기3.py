@@ -16,30 +16,15 @@ for test_case in range(T):
         if data[i].isdigit():
             stack.append(data[i])
         else:
-            if data[i] != ')' and data[i] == '/' and token[-1] == '*':
-                stack.append(token.pop())
-                token.append(data[i])
-            if data[i] != ')' and data[i] == '/' and token[-1] == '/':
-                stack.append(token.pop())
-                token.append(data[i])
+
             if data[i] != ')' and data[i] == '*' and token[-1] == '*':
                 stack.append(token.pop())
                 token.append(data[i])
-            if data[i] != ')' and data[i] == '*' and token[-1] == '/':
-                stack.append(token.pop())
-                token.append(data[i])
+
             if data[i] != ')' and data[i] == '+' and token[-1] == '+':
                 stack.append(token.pop())
                 token.append(data[i])
-            if data[i] != ')' and data[i] == '+' and token[-1] == '-':
-                stack.append(token.pop())
-                token.append(data[i])
-            if data[i] != ')' and data[i] == '-' and token[-1] == '+':
-                stack.append(token.pop())
-                token.append(data[i])
-            if data[i] != ')' and data[i] == '-' and token[-1] == '-':
-                stack.append(token.pop())
-                token.append(data[i])
+
 
             if data[i] != ')' and data[i] != '/':
                 token.append(data[i])
