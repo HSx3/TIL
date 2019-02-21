@@ -6,7 +6,10 @@
     {% for board in boards %}
         <p>{{ board.id }}</p>
         <p>{{ board.title }}</p>
-        {{ board.created_at|timesince }} 전
+        {{ board.created_at|timesince }} 전<br>
+        <a href="/boards/{{ board.pk }}">[글 보러가기]</a>
+        <a href="/boards/{{ board.pk }}/delete/" onclick="return confirm('진짜 지울꺼야?')">[삭제]</a>
+        <a href="/boards/{{ board.pk }}/edit/">[수정]</a>
         <hr>
     {% endfor %}
 {% endblock %}

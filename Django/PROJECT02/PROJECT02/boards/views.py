@@ -27,3 +27,23 @@ def create(request):
     
     return redirect('/boards/') # 주소로 이동 가능
     # return redirect(index)    # view 함수명으로 이동 가능
+    
+def detail(request, pk):
+    board = Board.objects.get(pk=pk)
+    return render(request, 'boards/detail.html', {'board': board})
+    
+def delete(request, pk):
+    board = Board.objects.get(pk=pk)
+    board.delete()
+    return redirect('/boards/')
+    
+def edit(request, pk):
+    board = Board.objects.get(pk=pk)
+    return render(request, 'boards/edit.html', {'board': board})
+    
+def update(request, pk):
+    board = Board.objects.get(pk=pk)
+    board.title = request.POST.get('title')
+    board.content = request.POST.get('content')
+    board.save()
+    return redirect(f'/boards/{board.pk}/')

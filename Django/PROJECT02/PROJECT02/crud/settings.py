@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jobs.apps.JobsConfig',
     'boards.apps.BoardsConfig',     # 'boards'
     'django_extensions',
     'django.contrib.admin',
