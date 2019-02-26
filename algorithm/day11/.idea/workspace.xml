@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d716468f-7eae-4bac-a45a-25a0b5c80b47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d716468f-7eae-4bac-a45a-25a0b5c80b47" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/행렬찾기.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
+            <state relative-caret-position="903">
               <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="43" />
-              <folding>
-                <element signature="e#886#897#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -28,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/day11-A/연습3_BFS2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="588">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" selection-end-column="33" />
+              <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -36,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day11-A/연습3_BFS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="210">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -59,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day11-A/(1258)행렬찾기2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="651">
               <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
             </state>
           </provider>
@@ -100,6 +95,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,7 +112,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -131,7 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.행렬찾기">
+  <component name="RunManager" selected="Python.ex1">
     <configuration name="원형큐" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="day11" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -260,7 +255,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.행렬찾기" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.ex3_BFS" />
         <item itemvalue="Python.원형큐" />
@@ -339,19 +333,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="64" column="14" lean-forward="true" selection-end-line="73" />
-          <folding>
-            <element signature="e#915#926#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day11-A/(1258)행렬찾기.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/행렬찾기_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -359,20 +341,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day11-A/(1258)행렬찾기2.py">
+    <entry file="file://$PROJECT_DIR$/행렬찾기.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        <state relative-caret-position="903">
+          <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/행렬찾기.py">
+    <entry file="file://$PROJECT_DIR$/day11-A/연습3_BFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="43" />
-          <folding>
-            <element signature="e#886#897#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -383,17 +362,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day11-A/연습3_BFS.py">
+    <entry file="file://$PROJECT_DIR$/day11-A/(1258)행렬찾기.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11-A/(1258)행렬찾기2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="651">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day11-A/연습3_BFS2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" selection-end-column="33" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="33" />
         </state>
       </provider>
     </entry>
