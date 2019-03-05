@@ -1,14 +1,3 @@
-def SearchParent(n):
-    if tree[n][2] != 0:
-        L.append(tree[n][2])
-        SearchParent(tree[n][2])
-    return L
-
-def Search(L1, L2):
-    for i in L2:
-        if i in L1:
-            return i
-
 def preorder(node):
     global count
     if node != 0:
@@ -19,16 +8,16 @@ def preorder(node):
 
 
 import sys
-sys.stdin = open("공통조상_input.txt")
+sys.stdin = open("서브트리_input.txt")
 
 T = int(input())
-
 for test_case in range(T):
-    V, E, node1, node2 = map(int, input().split())
+    E, N = map(int, input().split())    # E : 간선의 개수, N : 노드
+    V = E+1
     tree = [[0 for _ in range(3)] for _ in range(V + 1)]
     temp = list(map(int, input().split()))
     count = 0
-    print(tree)
+    # print(tree)
 
     for i in range(E):
         n1 = temp[i * 2]
@@ -39,9 +28,4 @@ for test_case in range(T):
             tree[n1][1] = n2
         tree[n2][2] = n1        # 부모값 채우기
 
-    L = []
-    Parent_node1 = SearchParent(node1)
-    L = []
-    Parent_node2 = SearchParent(node2)
-    n = Search(Parent_node1, Parent_node2)
-    print("#{} {} {}".format(test_case + 1, n, preorder(n)))
+    print("#{} {}".format(test_case+1, preorder(N)))

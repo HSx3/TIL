@@ -12,14 +12,14 @@ idiot = 0
 
 max_genius = 0
 max_idiot = 0
-max = 0
 
 # max_idiot
-for i in acorn:
-    max_idiot += i
-    if max < max_idiot:
-        max = max_idiot
-# print(max)
+data_sum = acorn[0]
+max_idiot = acorn[0]
+
+for i in range(1, len(acorn)):
+    data_sum = max(data_sum + acorn[i], acorn[i])
+    max_idiot = max(data_sum, max_idiot)
 
 # max_genius
 for_genius = sorted(acorn)[::-1]
@@ -32,4 +32,4 @@ for i in for_genius:
             max_genius += i
 # print(max_genius)
 
-print(f'{max} {max_genius}')
+print('{} {}'.format(max_idiot, max_genius))

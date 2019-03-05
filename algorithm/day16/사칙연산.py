@@ -4,8 +4,9 @@ def inorder(node):
         print("{}".format(alpha[node]), end="")
         inorder(secondChild[node])
 
+
 import sys
-sys.stdin = open("중위순회_input.txt")
+sys.stdin = open("사칙연산_input.txt")
 
 T = 10
 for test_case in range(T):
@@ -22,11 +23,7 @@ for test_case in range(T):
             firstChild[addr] = int(temp[2])
             if addr * 2 + 1 <= N:
                 secondChild[addr] = int(temp[3])
-        # print(temp)
-    # print(firstChild)
-    # print(secondChild)
-    # print(alpha)
 
-    print("#{}".format(test_case+1), end=" ")
+    print("#{}".format(test_case + 1), end=" ")
     inorder(1)
     print()
