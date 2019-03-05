@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fa884d2-8725-4fd8-a616-5d9ee6bf48ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../IM/.idea/IM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../IM/.idea/IM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IM/연속부분최대곱.py" beforeDir="false" afterPath="$PROJECT_DIR$/../IM/연속부분최대곱.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IM/월동준비.py" beforeDir="false" afterPath="$PROJECT_DIR$/../IM/월동준비.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IM/회전.py" beforeDir="false" afterPath="$PROJECT_DIR$/../IM/회전.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15/공통조상.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/공통조상.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15/중위순회.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/중위순회.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../add/.idea/add.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../add/.idea/add.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../add/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../add/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../add/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../add/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +18,9 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -53,12 +50,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/이진힙.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
               <folding>
                 <marker date="1551751917665" expanded="true" signature="13:19" ph="..." />
                 <marker date="1551751917665" expanded="true" signature="13:20" ph="..." />
@@ -83,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/이진탐색.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -92,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/사칙연산.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -100,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/사칙연산_input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-589">
-              <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+            <state relative-caret-position="494">
+              <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -137,7 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -148,6 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,11 +157,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day15" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../add" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RunDashboard">
@@ -178,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.사칙연산">
+  <component name="RunManager">
     <configuration name="서브트리" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="day16" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,17 +260,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.서브트리" />
-      <item itemvalue="Python.이진탐색" />
-      <item itemvalue="Python.이진힙" />
-      <item itemvalue="Python.사칙연산" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.사칙연산" />
-        <item itemvalue="Python.이진탐색" />
-        <item itemvalue="Python.이진힙" />
         <item itemvalue="Python.서브트리" />
       </list>
     </recent_temporary>
@@ -292,15 +280,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
@@ -308,6 +293,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -383,24 +372,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/사칙연산_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-589">
-          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/이진탐색.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/이진힙.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding>
             <marker date="1551751917665" expanded="true" signature="13:19" ph="..." />
             <marker date="1551751917665" expanded="true" signature="13:20" ph="..." />
@@ -420,10 +395,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/이진탐색.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/사칙연산_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/사칙연산.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>
