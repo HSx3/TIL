@@ -67,10 +67,10 @@ for i in range(5):
             temp_digonal_1[i][j] = numbers[i][j]
         if i+j == 4:
             temp_digonal_2[i][j] = numbers[i][j]
-print(temp_row)
-print(temp_col)
-print(temp_digonal_1)
-print(temp_digonal_2)
+# print(temp_row)
+# print(temp_col)
+# print(temp_digonal_1)
+# print(temp_digonal_2)
 for i in range(5):
     for j in range(5):
         if temp_digonal_1[i][j] != 0:
