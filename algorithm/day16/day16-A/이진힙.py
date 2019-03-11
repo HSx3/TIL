@@ -1,5 +1,4 @@
-﻿
-def enQ(n):
+﻿def enQ(n):
     global last
     last += 1  # 마지막 노드번호 증가
     c = last  # 마지막 노드를 자식 노드로
