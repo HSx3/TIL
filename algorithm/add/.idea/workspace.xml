@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="969d8eb5-69af-434c-a782-63a6b4a7056e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="969d8eb5-69af-434c-a782-63a6b4a7056e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +12,7 @@
     <session id="664687990">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="8" />
           <entry key="project.open.time.2" value="4" />
           <entry key="project.opened" value="12" />
@@ -169,7 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.정곤이의단조증가하는수">
+  <component name="RunManager" selected="Python.회문1">
     <configuration name="농작물수확하기" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="add" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -343,11 +341,9 @@
       <item itemvalue="Python.ladder2" />
       <item itemvalue="Python.미로2" />
       <item itemvalue="Python.농작물수확하기" />
-      <item itemvalue="Python.정곤이의단조증가하는수" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.정곤이의단조증가하는수" />
         <item itemvalue="Python.회문1" />
         <item itemvalue="Python.농작물수확하기" />
         <item itemvalue="Python.미로2" />
@@ -377,7 +373,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32858709" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32858709" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39868566" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
