@@ -1,3 +1,6 @@
+import sys
+sys.stdin = open("오름차순정렬_input.txt")
+
 def quickSort(start, end, x):
     if start >= end:
         return
