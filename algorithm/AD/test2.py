@@ -1,44 +1,53 @@
+
 import sys
-sys.stdin = open("장군_input.txt")
+sys.stdin = open('test.txt')
 
-def bfs():
-    global r2, c2
+def isWall(x, y):
+    if x < 0 or x > N-1: return True
+    if y < 0 or y > M-1: return True
+    return False
 
-    que = []
+def BFS(x, y):
+    global ans, ex, ey
+    # 8방향 좌표
     dx = [-3, -3, -2, 2, 3, 3, 2, -2]
-    dy = [-2, 2, 3, 3, 2, -2, -3, -3]
+    dy = [-2, 2, 3, 3, 2, -2, -3, -2]
 
-    wall = [[[-1,0],[-2, -1]], [[-1,0],[-2,1]], [[0,1],[-1,2]], [[0,1],[1,2]], [[1,0],[2,1]], [[1,0],[2,-1]], [[0,-1],[1,-2]], [[0,-1],[-1,-2]]]
+    # 상하좌우 방향구현
+    direct = [[(-2, -1), (-1, 0)], [(-2, 1), (-1, 0)], [(-1, 2), (0, 1)], [(1, 2), (0, 1)],
+              [(2, 1), (1, 0)], [(2, -1), (1, 0)], [(1, -2), (0, -1)], [(-1, -2), (0, -1)]]
+    Q = [(x, y, 0)]
 
-    que.append((r1, c1, 0))
-    map[r1][r2] = 1
-    while que:
-        x, y, count = que.pop(0)
+    while Q:
+        x, y, cnt = Q.pop(0)
 
-        if x == r2 and y == c2:
-            return count
+        if x == ex and y == ey:
+            ans = cnt
+            return 1
 
         for i in range(8):
-            nx = x + dx[i]
-            ny = y + dy[i]
-            # print(nx)
-            # print(ny)
+            rex = x + dx[i]
+            rey = y + dy[i]
 
-            if nx < 0 or nx >= 10 or ny < 0 or ny >= 9:
-                continue
-            # if map[nx][ny] == 9:
-            #     continue
-            map[nx][ny] = 1
-            que.append((nx, ny, count+1))
-    return -1
+            chk = 0
+            if not isWall(rex, rey):
+                for j in range(2):
+                    if data[x + direct[i][j][0]][y + direct[i][j][1]] == 1:
+                        chk = 1
 
+                if chk == 0:
+                    Q.append((rex, rey, cnt + 1))
 
-r1, c1 = map(int, input().split())  # 상 위치
-r2, c2 = map(int, input().split())  # 왕 위치
-map = [[0 for _ in range(9)] for _ in range(10)]
-map[r2][c2] = 9
-print(map)
+N, M = 10, 9
+data = [[0]*M for _ in range(N)]
 
-print(bfs())
+sx, sy = map(int, input().split())
+ex, ey = map(int, input().split())
 
-# print(map)
+data[ex][ey] = 1
+ans = 0
+
+if BFS(sx, sy):
+    print(ans)
+else:
+    print(-1)
