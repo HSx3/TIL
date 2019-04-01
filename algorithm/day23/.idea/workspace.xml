@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e68668b7-69a1-4215-b79c-646fd8fdf9ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../AD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AD/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../add/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../add/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AD/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AD/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -307,7 +307,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
