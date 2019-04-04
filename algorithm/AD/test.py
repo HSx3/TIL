@@ -41,15 +41,15 @@ sys.stdin = open("테이프이어붙이기_input.txt")
 
 def comb(no, count):
     global sums, total
-    # if no >= N:
-    #     if count == N//2:
-    #
-    #         # if sum(b) not in sums:
-    #         #     sums.append((sum(b), total-sum(b)))
-    #         # for i in range(N):
-    #         #     print(b[i], end=' ')
-    #         # print()
-    #     return
+    if no >= N:
+        if count == N//2:
+
+            # if sum(b) not in sums:
+            #     sums.append((sum(b), total-sum(b)))
+            for i in range(N):
+                print(b[i], end=' ')
+            print()
+        return
     b[no] = data[no]
     comb(no+1, count+1, )
     b[no] = 0
