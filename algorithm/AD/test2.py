@@ -1,40 +1,43 @@
 import sys
-sys.stdin = open("test.txt")
+sys.stdin = open("input.txt")
 
-def bfs():
-    que = []
-    que.append((0, 0))
-    visited[0][0] = 0
+def DFS(x, y):
+    global flag
 
-    dx = [-1, 1, 0, 0]
-    dy = [0, 0, -1, 1]
+    if flag:
+        return
 
-    while que:
-        x, y = que.pop(0)
+    data[x][y] = 9
+    dx = [0, 0, -1]
+    dy = [-1, 1, 0]
 
-        # if x == N-1 and y == N-1:
-        #     return time
+    if x == 0:
+        flag = y
+        return
 
-        for i in range(4):
-            nx = x + dx[i]
-            ny = y + dy[i]
+    for i in range(3):
+        nx = x + dx[i]
+        ny = y + dy[i]
 
-            if nx < 0 or nx >= N or ny < 0 or ny >= N:
-                continue
-            if visited[nx][ny] > visited[x][y] + data[x][y]:
-                visited[nx][ny] = visited[x][y] + data[x][y]
-                # que.append((nx, ny, visited[x][y] + data[x][y]))
-                que.append((nx, ny))
-    print(visited)
+        if nx < 0 or nx >= 100 or ny < 0 or ny >= 100:
+            continue
+        if data[nx][ny] == 0:
+            continue
+        if data[nx][ny] == 9:
+            continue
 
+        if data[nx][ny] == 1:
+            data[nx][ny] = 9
+            DFS(nx, ny)
 
-T = int(input())
+T = 10
 for test_case in range(1, T+1):
     N = int(input())
-    data = [list(map(int, input())) for _ in range(N)]
-    visited = [[0xffffff]*N for _ in range(N)]
-    # print(visited)
-    total = []
-    bfs()
-    # print(visited)
-    print('#{} {}'.format(test_case, visited[N-1][N-1]))
+    data = [list(map(int, input().split())) for _ in range(100)]
+    # print(data)
+    flag = 0
+    for i in range(100):
+        if data[99][i] == 2:
+            sx, sy = 99, i
+            DFS(sx, sy)
+            print('#{} {}'.format(test_case, flag))
