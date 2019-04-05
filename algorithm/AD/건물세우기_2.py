@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt")
+sys.stdin = open("건물세우기_2.txt")
 
 def DFS(no, nsum):
     global nmin
