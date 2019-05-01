@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton">Click me</button>
+    <script>
+        var button = document.getElementById('myButton')
+        button.addEventListener('click', function() {
+            console.log('button clicked!')
+        })
+        
+        // setTimeout(callback, 5000)
+        setTimeout(function() {
+            console.log('3초 후 출력된다.')
+        }, 3000)
+
+        // setTImeout(() => console.log('3초 후 출력된다.'), 3000)
+    </script>
+</body>
+</html>
